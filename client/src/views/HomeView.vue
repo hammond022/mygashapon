@@ -31,4 +31,6 @@ async function findUserId() {
   </div>
 
   <div class="userInfo"></div>
+
+  <Gatcha :gatcha-owner-username="username" />
 </template>

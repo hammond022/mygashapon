@@ -15,6 +15,17 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// get user by username
+router.get("/find/:username", async (req, res) => {
+  try {
+    const user = await User.find({ username: req.params.username });
+    if (!user) return res.status(404).json({ message: "User not found" });
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 // add coins to user
 
 router.post("/:id/add-coins", async (req, res) => {

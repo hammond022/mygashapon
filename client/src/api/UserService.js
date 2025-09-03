@@ -8,6 +8,11 @@ class UserService {
     const res = await axios.get(`${url}${userId}`);
     return res.data;
   }
+
+  static async findUsername(username) {
+    const res = await axios.get(`${url}find/${username}`);
+    return res.data;
+  }
 }
 
 export default UserService;
