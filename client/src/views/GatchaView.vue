@@ -41,7 +41,7 @@ onMounted(async () => {
     </div>
   </div> -->
   <div class="flex items-center justify-center m-8">
-    <img src="../assets/images/machine.jpeg" alt="" />
+    <img src="../assets/images/machine.png" alt="" />
   </div>
 
   <div class="flex items-center justify-center m-8">
